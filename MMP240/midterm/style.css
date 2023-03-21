@@ -1,0 +1,72 @@
+body{
+    position: relative;
+    width: 1363px;
+    height: 910px;
+    background-color: #DF6F8B;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #FCD9E2 75%, #DF6F8B 97.4%);
+}
+
+div#midtermpage{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    /*background-color: #fff;*/
+}
+
+header{
+    padding: 3em;
+    background: linear-gradient(89.05deg, #E3567A -0.08%, #070002 40%, rgba(0, 0, 0, 0) 71.76%),
+        url("images/satc_banner.jfif") no-repeat top right/contain, #000;
+}
+div.col{
+    width:50%;
+}
+
+header p{
+    margin-left:4em;
+    width:30%;
+    color: #fff;
+}
+
+.button {
+    display:block;
+    width:4em;
+    border: solid 1px #fff;
+    border-radius:5px;
+    padding:10px;
+    color:#fff;
+    text-decoration: none;
+    text-align: right;
+
+
+}
+
+.play {
+    padding-left:13px;
+    background:url("images/Play arrow.svg") no-repeat;
+    background-position-x: -2px;
+    background-position-y: center;
+    background-size: 100px;
+    margin-left: 150px;
+
+}
+
+nav li {
+    display:inline; /* need to fix html*/
+
+}
+a{ /* og color pink*/
+    color:pink;
+}
+
+a:link{
+    color:#681919;
+    text-decoration: underline;
+}
+a:visited{
+    color:green; /*turns green when clicked/visited?*/
+}
+a:hover{
+    color:darkorange; /*turns orange when mouse hovers*/
+}
