@@ -18,7 +18,7 @@ div#midtermpage{
 header{
     padding: 3em;
     background: linear-gradient(89.05deg, #E3567A -0.08%, #070002 40%, rgba(0, 0, 0, 0) 71.76%),
-        url("images/satc_banner.jfif") no-repeat top right/contain, #000;
+        url("images/satc_banner\ 1.png") no-repeat top right/contain, #000;
 }
 div.col{
     width:50%;
@@ -84,6 +84,7 @@ nav a{
 /* homepage layout*/
 .main{
     padding: 0 3em; /* first value for top and bottom is 0 left and right is 3em*/
+}
 .col{
     float:left;
     margin-right: 2em;
@@ -96,3 +97,7 @@ nav a{
 .footer{
     clear:both;
 }
+
+/*
+- google fonts
+fix floats */
