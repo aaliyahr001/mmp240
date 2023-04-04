@@ -36,7 +36,7 @@ header p{
     text-decoration: none;
     text-align: right;
 }
-.button:hover{ /*doesn't work*/
+.button:hover{ 
     background-image:url("images/Play arrow hover.svg");
     background-color: #fff;
     border: solid 1px #F53061;
