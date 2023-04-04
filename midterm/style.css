@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600&display=swap');
+body{
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FCD9E2 75%, #DF6F8B 97.4%);
+}
+
+div#midtermpage{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 2em;
+}
+
+header{
+    padding: 3em;
+    background: linear-gradient(89.05deg, #E3567A -0.08%, #070002 40%, rgba(0, 0, 0, 0) 71.76%),
+        url("images/satc_banner\ 1.png") no-repeat top right/contain, #000;
+}
+
+header p{
+    margin-left:4em;
+    width:30%;
+    color: #fff;
+}
+
+.button {
+    display:block;
+    width:4em;
+    border: solid 1px #fff;
+    border-radius:5px;
+    padding:10px;
+    background-color: #F53061;
+    color:#fff;
+    text-decoration: none;
+    text-align: right;
+}
+.button:hover{ /*doesn't work*/
+    background-image:url("images/Play arrow hover.svg");
+    background-color: #fff;
+    border: solid 1px #F53061;
+    color:#F53061
+}
+
+.play {
+    padding-left:13px;
+    background-image:url("images/Play arrow.svg");
+    background-repeat: no-repeat;
+    background-position-x: -2px;
+    background-position-y: center;
+    background-size: 100px;
+    margin-left: 150px;
+}
+/*nav bar*/
+nav li {
+    display:inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+nav li:hover {
+    background-color: rgb(226, 226, 226);
+
+}
+a{ /* og color pink*/
+    color:pink;
+}
+
+nav{
+    background-color: #ffffff;
+    padding-left: 3em;
+    margin-bottom: 2em;
+}
+
+nav ul{
+    margin: 0;
+}
+
+nav a{
+    color:#E3567A;
+    text-decoration: none;
+}
+/* homepage layout*/
+.main{
+    padding: 0 3em; /* first value for top and bottom is 0 left and right is 3em*/
+}
+.col{
+    float:left;
+    margin-right: 2%;
+    width:49%;
+}
+.col:last-child{
+   margin-right: 0; 
+}
+
+.footer{
+    clear:both;
+}
+/* Episode styles */
+.episodes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    flex: 0 0 auto;
+    font-weight: 200;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    width: 30%;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    margin-right: 3%;
+}
+.card p, .card h4{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.card h4:hover{
+    text-decoration: underline;
+}
+.card img{
+    width:100%;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 10px 5px 10px pink;
+}
+.card a{
+    color:#F53061;
+    text-decoration: none;
+}
+.card a:hover{
+    text-decoration: underline;
+}
+
+
+/*mobile layout*/
+
+@media (max-width: 775px){
+    .episodes{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .header{
+        background: linear-gradient(89.05deg, #E3567A -0.08%, #070002 40%, rgba(0, 0, 0, 0) 71.76%),
+        url("images/satc_banner\ 1.png") no-repeat top right/contain, #000;
+    }
+    .header p{
+        width:100%;
+        margin-top:5em;
+    }
+    header h1{
+        margin-top: 5em;
+    }
+}
+/*end of media query*/
