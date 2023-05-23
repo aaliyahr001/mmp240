@@ -1,0 +1,293 @@
+/*CSS Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+*{
+    box-sizing:border-box;
+    font:Arial;
+    color:#333;
+}
+.hero-banner{
+    background-image: url("images/media-center-larger-room.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:15em;
+    padding-bottom: 10em;
+}
+.hero-banner h3{
+    font-size: 50px;
+    font-family: 'Work Sans';
+    color: white;
+    font-weight:700;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height:20px;
+}
+p, h2, h3{
+    margin:1em 0;
+}
+img{
+    width:auto;
+    max-width:100%;
+}
+header{
+    padding:25px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+header h1{
+    font-family: 'Work Sans';
+    font-style:normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.wrapper{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; /*center*/
+}
+.top-nav{
+    font-family: 'Work Sans';
+    text-align: right;
+    overflow: hidden;
+    background-color: #3067e0;
+}
+.top-nav li{
+    margin: 0.5em 0;
+    border-bottom:none;
+    margin: 0 1em;
+}
+.top-nav ul{
+    display:none;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    width:100%;
+    text-align: center;
+}
+.top-nav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 17px;
+    text-decoration: none;
+    color:black;
+}
+.top-nav a:hover{
+    font-weight: bold;
+    background-color: #6a8fea;
+    -webkit-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+    color:white;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+.search input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 3px;
+    margin-right: 16px;
+    border: none;
+    border-radius:5px;
+    font-size: 17px;
+  }
+#menubtn{
+    display:inline-block;
+    width:36px;
+    padding:5px;
+}
+
+/* Search Program Navigation*/
+.search-programs{ /* search programs block*/
+    padding:10px 20px 15px 20px;
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5em;
+    background-color: white;
+}
+.search-programs h2{ /* Find a design Program */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    margin-top:18px;
+}
+.search-programs h3{ /*Search by*/
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+.search-programs li{ /* Discipline, degree, borough*/
+    font-family: 'Work Sans';
+    font-size:20px;
+    font-weight:300;
+    background-color: #ffffff;
+    background-image: url("images/arrowdown.svg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    border: solid 1px;
+    border-color: #000000;
+    /*border-bottom: solid 1px #fff;*/
+    border-radius: 5px;
+}
+.search-programs li a{
+    display:block; /* in order to accept margins top and bottom*/
+    margin:.7em;
+    color:#000000;
+    text-decoration:none;
+}
+.dropdown{
+    display:none;
+}
+.dropdown li{
+    background: white;
+    border-color: black;
+}
+.dropdown li a{
+    color:black;
+}
+.search-programs li:hover{ 
+    background-color: #164bde;
+    -webkit-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+    font-weight:400;
+    background-repeat: no-repeat;
+}
+.search-programs a:hover{
+    display:block;
+    width:100%;
+    color:white;
+}
+.search-programs li:hover .dropdown{
+    display:block;
+}
+.layout{
+    display:block;
+    padding:1em;
+}
+.search-programs .dropdown li:hover{
+    background-color: rgb(100, 135, 241);
+    color:white; /*not working*/
+}
+.layout{
+    font-family:'Work Sans';
+}
+.layout h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.layout h3{
+    font-weight:700;
+    font-size:18px;
+}
+.layout a:hover{
+    color:#164bde;
+    -webkit-transition: color 700ms linear;
+    -ms-transition: color 700ms linear;
+    transition: color 700ms linear;
+}
+.layout img{
+    margin:-15px;
+    margin-left:2px;
+}
+main{
+    font-family:'Work Sans';
+}
+.programs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    flex: 0 0 auto;
+    font-weight: 200;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    width: 30%;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    margin-right: 3%;
+    margin-top:5%;
+    -webkit-transition: box-shadow 700ms linear;
+    -ms-transition: box-shadow 700ms linear;
+    transition: box-shadow 700ms linear;
+}
+.card h2, .card p, .card h3{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.card h2{
+    font-size:20px;
+}
+.card h4:hover{
+    text-decoration: underline;
+}
+.card img{
+    width:100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 70px;
+}
+.card:hover{
+    box-shadow: 10px 5px 10px rgb(206, 210, 230);
+    -webkit-transition: box-shadow 700ms linear;
+    -ms-transition: box-shadow 700ms linear;
+    transition: box-shadow 700ms linear;
+}
+
+/* Search program navigation*/
+
+@media (min-width:768px){
+    header{
+        display:block;
+    }
+    .top-nav ul{
+        display:block;
+        border:none;
+        text-align: left;
+    } 
+    .top-nav li{
+        display:inline;
+    }
+    #menubtn{
+        display:none;
+    }
+    .layout{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 1em;
+    }
+    .search-menu{ /*flex container for search prpogram menu*/
+        display:flex;
+        justify-content: space-between;
+    }
+    .search-programs li{
+        position:relative;
+        width: 31%;
+        background-position-x: 15em;
+    }
+    /* .search-programs li:hover{
+       background-position-x: 15em;*/
+    .dropdown{
+        position:absolute;
+        width: 100%;
+        
+    }
+    .dropdown li{
+        width:100%;
+    }
+    
+
+
+
+}
